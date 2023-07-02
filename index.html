@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto - Upload Files</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body class="bg-info">
+    <div class="container-fluid">
+        <div class="row mt-5 justify-content-md-center">
+            <div class="col-md-8 my-4">
+                <h1 class="text-white">Projeto - Upload Files</h1>
+            </div>
+            <div class="col-md-8">
+                <form id="uploadForm" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label class="text-white" for="file">Selecione um arquivo:</label>
+                        <input type="file" name="file" id="file" class="text-white form-control-file">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+            <div id="progressWrapper" class="mt-4 d-none">
+                <h3>Progresso do Upload:</h3>
+                <div class="progress">
+                    <div id="progressBar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
