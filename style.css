@@ -1,0 +1,7 @@
+#progressWrapper{
+    display: none;
+}
+
+#progressBar{
+    width: 0%;
+}
